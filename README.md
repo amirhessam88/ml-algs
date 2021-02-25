@@ -25,7 +25,7 @@ pip install mlalgs
 ```
 
 ## Implementations
-- *Logistic Regression* [Source](mlalgs/logistic_regression.py) [Notebook](notebooks/logistic_regression.ipynb)
+- **Logistic Regression:** [Source](mlalgs/logistic_regression.py), [Notebook](notebooks/logistic_regression.ipynb)
 
 ## Citation
 If you use the library in academic work, please consider citing
