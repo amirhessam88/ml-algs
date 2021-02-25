@@ -24,6 +24,9 @@ First, install Python 3.6 from https://www.python.org, and then run:
 pip install mlalgs
 ```
 
+## Implementations
+- **Logistic Regression:** [Source](mlalgs/logistic_regression.py), [Notebook](notebooks/logistic_regression.ipynb)
+
 ## Citation
 If you use the library in academic work, please consider citing
 https://doi.org/10.1117/12.2304418 .
