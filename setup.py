@@ -26,7 +26,7 @@ DOWNLOAD_URL = "https://github.com/amirhessam88/ml-algs/"
 LICENSE = "MIT"
 PYTHON_REQUIRES = ">=3.6"
 PACKAGES = setuptools.find_packages()
-VERSION = "0.0.2"
+VERSION = "0.0.3"
 
 # ==============================================================================
 # Setup
