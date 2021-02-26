@@ -38,8 +38,8 @@ class LogisticRegression:
     def __init__(self, learning_rate=0.001, n_iters=1000, weights=None, bias=None):
         self.learning_rate = learning_rate
         self.n_iters = n_iters
-        self.weights = None
-        self.bias = None
+        self.weights = weights
+        self.bias = bias
 
     def fit(self, X_train, y_train):
         """
@@ -128,7 +128,7 @@ class LogisticRegression:
         pos_class = []
         neg_class = []
         for i in range(len(y_pred_proba)):
-            if y_pred_proba[i] >= threshold and y_test[i] == 1:
+            if y_test[i] == 1:
                 pos_class.append(y_pred_proba[i])
             else:
                 neg_class.append(y_pred_proba[i])
@@ -158,9 +158,11 @@ class LogisticRegression:
             color="black",
             label=f"Decision Bound = {threshold}",
         )
-        ax.set_title("Decision Boundary")
-        ax.set_xlabel("# of Samples", fontsize=12)
-        ax.set_ylabel("Predicted Probability", fontsize=12)
+        ax.set(
+            title="Decision Boundary",
+            xlabel="# of Samples",
+            ylabel="Predicted Probability",
+        )
         ax.tick_params(axis="both", which="major", labelsize=12)
         ax.legend(bbox_to_anchor=(1.2, 0.5), loc="center", ncol=1, framealpha=0.0)
         plt.show()
